@@ -3,9 +3,11 @@
 A comfortable and functional Oh My Posh theme, inspired by the warm colors of autumn. Perfect for developers who appreciate a clean and organized terminal environment.
 
 VS Code
+
 ![DevTember Theme Screenshot](./screenshots/vs-code.png)
 
 PowerShell
+
 ![DevTember Theme Screenshot](./screenshots/powershell.png)
 
 ---
