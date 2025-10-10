@@ -68,13 +68,13 @@
         },
         {
           "properties": {
-            "display_untracked_files": true,
             "branch_max_length": 25,
             "cache_duration": "none",
+            "display_untracked_files": true,
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "template": " \uf126 {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}{{ if gt .Working.Modified 0 }} \uf044 {{ .Working.Modified }}{{ end }}{{ if gt .Working.Added 0 }} \uf067 {{ .Working.Added }}{{ end }}{{ if gt .Working.Untracked 0 }} \uf067 {{ .Working.Untracked }}{{ end }}{{ if gt .Working.Deleted 0 }} \uf068 {{ .Working.Deleted }}{{ end }}{{ end }}{{ if and .Working.Changed .Staging.Changed }} |{{ end }}{{ if .Staging.Changed }}{{ if gt .Staging.Added 0 }} \uf055 {{ .Staging.Added }}{{ end }}{{ if gt .Staging.Modified 0 }} \uf044 {{ .Staging.Modified }}{{ end }}{{ if gt .Staging.Deleted 0 }} \uf068 {{ .Staging.Deleted }}{{ end }}{{ end }}{{ if gt .StashCount 0 }} \uf187 {{ .StashCount }}{{ end }} ",
+          "template": " \uf126 {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}{{ if gt .Working.Modified 0 }} \uf044 {{ .Working.Modified }}{{ end }}{{ if gt .Working.Added 0 }} \uf067 {{ .Working.Added }}{{ end }}{{ if gt .Working.Untracked 0 }} \uf067 {{ .Working.Untracked }}{{ end }}{{ if gt .Working.Deleted 0 }} \uf1f8 {{ .Working.Deleted }}{{ end }}{{ end }}{{ if and .Working.Changed .Staging.Changed }} |{{ end }}{{ if .Staging.Changed }}{{ if gt .Staging.Added 0 }} \uf055 {{ .Staging.Added }}{{ end }}{{ if gt .Staging.Modified 0 }} \uf044 {{ .Staging.Modified }}{{ end }}{{ if gt .Staging.Deleted 0 }} \uf1f8 {{ .Staging.Deleted }}{{ end }}{{ end }}{{ if gt .StashCount 0 }} \uf187 {{ .StashCount }}{{ end }} ",
           "foreground": "#FDF0D5",
           "powerline_symbol": "\ue0b0",
           "background": "#A4161A",

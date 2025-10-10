@@ -2,13 +2,27 @@
 
 A comfortable and functional Oh My Posh theme, inspired by the warm colors of autumn. Perfect for developers who appreciate a clean and organized terminal environment.
 
-VS Code
+This theme comes in two variations to suit your preference for path display.
 
-![DevTember Theme Screenshot](./screenshots/vs-code.png)
+---
 
-PowerShell
+## 🎨 Variations
 
-![DevTember Theme Screenshot](./screenshots/powershell.png)
+This theme is available in two styles for displaying the current path.
+
+### Full
+
+Displays the complete path to your current directory.
+`D:\Projekts\GitHub\DevTember-Oh-My-Posh`
+
+![DevTember Full Path Screenshot](./screenshots/vs-code-full.png)
+
+### Folder
+
+Displays only the name of the current folder for a more compact view.
+`DevTember-Oh-My-Posh`
+
+![DevTember Full Path Screenshot](./screenshots/vs-code-folder.png)
 
 ---
 
@@ -26,16 +40,16 @@ PowerShell
 
 ## 🚀 Installation
 
-You can either install the theme directly from GitHub (recommended for easy setup) or by downloading the file locally.
+You can either install the theme directly from GitHub (recommended for easy setup) or by downloading the file locally. Choose the variation you prefer.
 
 ### Prerequisites
 
 1. Make sure you have the latest version of **[Oh My Posh](https://ohmyposh.dev/docs/installation/windows)** installed.
-2. You need a **[Nerd Font](https://www.nerdfonts.com/)** installed and set as the font in your terminal. (I recommend *FiraCode Nerd Font* or *Cascadia Code PL*).
+2. You need a **[Nerd Font](https://www.nerdfonts.com/)** installed and set as the font in your terminal. (I recommend *FiraCode Nerd Font* or *CaskaydiaCove NF*).
 
 ### Quick Install (from GitHub)
 
-This method loads the theme directly from the internet, no download required.
+This method loads the theme directly from the internet. Choose the line for the variation you prefer.
 
 1. Open your PowerShell profile file.
 
@@ -43,10 +57,18 @@ This method loads the theme directly from the internet, no download required.
     notepad $PROFILE
     ```
 
-2. Add the following line to your profile:
+2. Add **one** of the following lines to your profile:
+
+    **For the Full version (complete path):**
 
     ```powershell
-    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/GrischaTDev/DevTember-Oh-My-Posh/main/devtember.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/GrischaTDev/DevTember-Oh-My-Posh/main/devtember-full.omp.json" | Invoke-Expression
+    ```
+
+    **For the Folder version (only current folder):**
+
+    ```powershell
+    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/GrischaTDev/DevTember-Oh-My-Posh/main/devtember-folder.omp.json" | Invoke-Expression
     ```
 
 3. Save the file and reload your profile.
@@ -59,8 +81,8 @@ This method loads the theme directly from the internet, no download required.
 
 This method uses a local copy of the theme file.
 
-1. Download the `devtember.omp.json` file from this repository.
-2. Move the file into your Oh My Posh themes folder. You can find the path by running this command in PowerShell:
+1. Download the theme file you want: `devtember-full.omp.json` or `devtember-folder.omp.json`.
+2. Move the file into your Oh My Posh themes folder. You can find the path by running this command:
 
     ```powershell
     $env:POSH_THEMES_PATH
@@ -72,10 +94,19 @@ This method uses a local copy of the theme file.
     notepad $PROFILE
     ```
 
-4. Add the following line to your profile:
+4. Add the line corresponding to your downloaded file:
+
+    **For the Full version:**
 
     ```powershell
-    oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/devtember.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/devtember-full.omp.json" | Invoke-Expression
+    ```
+
+    **For the Folder version:**
+
+    ```powershell
+
+    oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/devtember-folder.omp.json" | Invoke-Expression
     ```
 
 5. Save the file and reload your profile.
