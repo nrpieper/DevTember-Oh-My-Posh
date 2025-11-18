@@ -62,13 +62,13 @@ This method loads the theme directly from the internet. Choose the line for the 
     **For the Full version (complete path):**
 
     ```powershell
-    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/GrischaTDev/DevTember-Oh-My-Posh/main/devtember-full.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/nrpieper/DevTember-Oh-My-Posh/main/devtember-full.omp.json" | Invoke-Expression
     ```
 
     **For the Folder version (only current folder):**
 
     ```powershell
-    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/GrischaTDev/DevTember-Oh-My-Posh/main/devtember-folder.omp.json" | Invoke-Expression
+    oh-my-posh init pwsh --config "https://raw.githubusercontent.com/nrpieper/DevTember-Oh-My-Posh/main/devtember-folder.omp.json" | Invoke-Expression
     ```
 
 3. Save the file and reload your profile.
