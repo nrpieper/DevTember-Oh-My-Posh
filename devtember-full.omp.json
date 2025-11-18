@@ -57,7 +57,7 @@
         {
           "properties": {
             "cache_duration": "none",
-            "style": "mixed",
+            "style": "full",
             "mixed_threshold": 6
           },
           "template": " \ue5ff {{ .Path }} ",
