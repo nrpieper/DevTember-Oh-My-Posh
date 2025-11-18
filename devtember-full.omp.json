@@ -57,7 +57,7 @@
         {
           "properties": {
             "cache_duration": "none",
-            "style": "full"
+            "style": "unique"
           },
           "template": " \ue5ff {{ .Path }} ",
           "foreground": "#FDF0D5",
